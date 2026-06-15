@@ -1,0 +1,1 @@
+User → React App → API Gateway → Microservice → Database
