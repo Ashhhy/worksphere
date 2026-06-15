@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Auth.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Auth.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Auth.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auth.Application.dll": {}
+        }
+      },
+      "Auth.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Auth.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auth.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Auth.Application/1.0.0": {
+      "type": "project",
+      "path": "../Auth.Application/Auth.Application.csproj",
+      "msbuildProject": "../Auth.Application/Auth.Application.csproj"
+    },
+    "Auth.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Auth.Domain/Auth.Domain.csproj",
+      "msbuildProject": "../Auth.Domain/Auth.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Auth.Application >= 1.0.0",
+      "Auth.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\TANISHQ\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
+      "projectName": "Auth.Infrastructure",
+      "projectPath": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\TANISHQ\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\TANISHQ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Application\\Auth.Application.csproj": {
+              "projectPath": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Application\\Auth.Application.csproj"
+            },
+            "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Domain\\Auth.Domain.csproj": {
+              "projectPath": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Domain\\Auth.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.422/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
