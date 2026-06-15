@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
       "projectName": "Auth.Infrastructure",
-      "projectPath": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\TANISHQ\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TANISHQ\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -63,15 +63,18 @@
       "originalTargetFrameworks": [
         "net8.0"
       ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Application\\Auth.Application.csproj": {
-              "projectPath": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Application\\Auth.Application.csproj"
+            "C:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Application\\Auth.Application.csproj": {
+              "projectPath": "C:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Application\\Auth.Application.csproj"
             },
-            "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Domain\\Auth.Domain.csproj": {
-              "projectPath": "c:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Domain\\Auth.Domain.csproj"
+            "C:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Domain\\Auth.Domain.csproj": {
+              "projectPath": "C:\\Users\\TANISHQ\\OneDrive\\Documents\\worksphere\\backend\\services\\auth-service\\src\\Auth.Domain\\Auth.Domain.csproj"
             }
           }
         }
