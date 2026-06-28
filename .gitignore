@@ -1,6 +1,13 @@
-# dotnet build artifacts
-bin/
-obj/
+# Build artifacts
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
 
-# Debug folders
-Debug/
+# Dependency folders
+**/node_modules/
+
+# IDE and editor settings
+.vs/
+.vscode/
+.idea/
