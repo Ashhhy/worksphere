@@ -6,7 +6,7 @@ namespace Auth.Domain.ValueObjects;
 public sealed class Email
 {
     public string Value { get; }
-    public Email(string value)
+    private Email(string value)
     {
         Value = value;
     }
@@ -19,7 +19,7 @@ public sealed class Email
         if (!IsValid(value))
             throw new InvalidEmailException(value);
 
-        return new Email(value.Trim().ToLower());
+        return new Email(value.Trim().ToLowerInvariant());
 
     }
     private static bool IsValid(string email)

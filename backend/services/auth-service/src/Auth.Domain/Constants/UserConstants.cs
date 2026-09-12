@@ -1,4 +1,4 @@
-namespace Auth.Domain.ValueObjects;
+namespace Auth.Domain.Constants;
 
 public static class UserConstants
 {

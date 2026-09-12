@@ -2,6 +2,7 @@ using Auth.Domain.Enums;
 using Auth.Domain.Common;
 using Auth.Domain.ValueObjects;
 using Auth.Domain.Exceptions;
+using Auth.Domain.Constants;
 
 namespace Auth.Domain.Entities;
 
@@ -13,7 +14,6 @@ public class User : BaseEntity
     public string PasswordHash { get; private set; } = string.Empty;
     public UserRole Role { get; private set; }
     public UserStatus Status { get; private set; }
-    public DateTime? UpdateAt { get; private set; }
     public DateTime? LastLoginAt { get; private set; }
 
     private User()
@@ -41,22 +41,22 @@ public class User : BaseEntity
     public void Activate()
     {
         Status = UserStatus.Active;
-        MarkasUpdated();
+        MarkAsUpdated();
     }
     public void Lock()
     {
         Status = UserStatus.Locked;
-        MarkasUpdated();
+        MarkAsUpdated();
     }
     public void RecordLogin()
     {
         LastLoginAt = DateTime.UtcNow;
-        MarkasUpdated();
+        MarkAsUpdated();
     }
     public void ChangeRole(UserRole role)
     {
         Role = role;
-        MarkasUpdated();
+        MarkAsUpdated();
     }
 
     private static void ValidateFirstName(string firstName)
@@ -66,11 +66,11 @@ public class User : BaseEntity
         if (firstName.Length > UserConstants.FirstNameMaxLength)
             throw new InvalidFirstNameException($"First Name cannot exceed {UserConstants.FirstNameMaxLength} characters");
     }
-    private static void ValidateLastName(string firstName)
+    private static void ValidateLastName(string lastName)
     {
-        if (string.IsNullOrWhiteSpace(firstName))
+        if (string.IsNullOrWhiteSpace(lastName))
             throw new InvalidLastNameException("Last Name is required");
-        if (firstName.Length > UserConstants.FirstNameMaxLength)
-            throw new InvalidLastNameException($"Last Name cannot exceed {UserConstants.FirstNameMaxLength} characters");
+        if (lastName.Length > UserConstants.LastNameMaxLength)
+            throw new InvalidLastNameException($"Last Name cannot exceed {UserConstants.LastNameMaxLength} characters");
     }
 }

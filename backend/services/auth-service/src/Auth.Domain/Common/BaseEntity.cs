@@ -7,14 +7,14 @@ public abstract class BaseEntity
     public DateTime? UpdatedAt { get; protected set; }
     protected BaseEntity()
     {
-
+        //Req by EF Core
     }
     protected BaseEntity(Guid id)
     {
         Id = id;
         CreatedAt = DateTime.UtcNow;
     }
-    protected void MarkasUpdated()
+    protected void MarkAsUpdated()
     {
         UpdatedAt = DateTime.UtcNow;
     }
